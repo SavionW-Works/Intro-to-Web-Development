@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Task 6</title>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <section>
+        <!-- COMPLETE NAVBAR DOC: https://getbootstrap.com/docs/5.2/components/navbar/#how-it-works -->
+
+      <!-- Makes a navbar (at lg sizes and above)   -->
+      <nav class="navbar navbar-expand-lg bg-success navbar-dark py-3"> 
+        
+        <!-- Keeping the navbar in a container helps with padding -->
+        <div class="container">
+          <a href="#" class="navbar-brand">Holistic Business</a> 
+          
+
+          <!-- Hamburger button for navbar. Targets the id = #navmenu -->
+          <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Allows navbar to collapse (disappear) -->
+          <div class="collapse navbar-collapse" id="navmenu">
+            
+            <!-- Actual navbar text -->
+            <ul class="navbar-nav ms-auto"> 
+              <li class="nav-item">
+                <a href="#AboutUs" class="nav-link">About Us</a>
+              </li> 
+
+              <li class="nav-item">
+                <a href="#Features" class="nav-link">Features</a>
+              </li> 
+
+              <li class="nav-item">
+                <a href="#FAQs" class="nav-link">FAQS</a>
+              </li> 
+
+              <li class="nav-item">
+                <a href="#Contact" class="nav-link">Contact</a>
+              </li>
+            
+            </ul>
+          
+          </div>
+        </div>
+        
+      </nav>
+    </section> 
+   
+    <section class="bg-dark text-light p-5 text-center text-sm-start"> 
+      <div class="container"> 
+        <!-- First row in system -->
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1> The environment is 
+              <span class="text-success">IMPORTANT</span> 
+              <br><br>
+              Our app can <span class="text-success">HELP</span>
+            </h1>   
+            
+            <!-- lead paragraphs stand out more -->
+            <p class="lead my-4"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Numquam eligendi dignissimos tempore sed consectetur, cum a iusto beatae praesentium. 
+            </p>  
+            <button class="btn-primary btn-lg">Download Now!</button>
+         </div>
+            <img class="img-fluid d-none d-sm-block" src="images/undraw_environment_iaus.svg" alt = "A hand holding a plant">
+        </div>
+      </div>
+        
+      
+    </section>
+
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

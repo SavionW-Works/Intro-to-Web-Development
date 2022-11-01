@@ -1,0 +1,163 @@
+html {
+    box-sizing: border-box; 
+    font-family: sans-serif; 
+    font-size: 80%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  } 
+
+  @media screen and (max-width: 768px) {
+    /* Entire query should be after the class name in question */
+   .container {
+        display: flex;
+        flex-direction: column;
+   } 
+
+   .item-1 {
+    order: 10;
+} 
+
+.item-2 {
+    order: 9;
+}
+
+.item-3 {
+    order: 8;
+} 
+
+.item-4 {
+    order: 7;
+} 
+
+.item-5 {
+    order: 6;
+} 
+
+.item-6 {
+    order: 5;
+} 
+
+.item-7 {
+    order: 4;
+} 
+
+.item-8 {
+    order: 3;
+}
+
+.item-9 {
+    order: 2;
+} 
+
+.item-10 {
+    order: 1;
+} 
+
+} /*End of media query*/  
+ 
+ @media screen and (min-width: 769px) {
+    /* Entire query should be after the class name in question */
+   .container { 
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;  
+        /* align-content: initial; */
+          
+        flex-basis: 1;
+        
+   }   
+
+   .container .item {
+        
+        
+   }
+
+.item-1 {  
+
+    width: 35%; 
+    align-self: center;
+    order: 1;
+} 
+
+.item-2 {   
+    width: 30%;
+    order: 2;
+}
+
+.item-3 {  
+    width: 35%;
+    order: 3;
+} 
+
+.item-4 {  
+    
+    width: 30%;
+    order: 4;
+} 
+
+.item-5 {  
+    
+    flex-basis: 40%;
+    order: 5;
+} 
+
+.item-6 {  
+    
+    width: 30%;
+    order: 6;
+} 
+
+.item-7 {  
+    
+    width: 35%;
+    order: 7;
+} 
+
+.item-8 {  
+    /* align-self: center; */
+    width: 30%;
+    order: 8;
+}
+
+.item-9 { 
+    width: 35%;
+    order: 9;
+} 
+
+.item-10 { 
+    width: 100%;
+    order: 10;
+} 
+
+} /*End of media query*/ 
+
+/* Even numbers are red, Odd numbers are yellow */
+.container *:nth-child(1), *:nth-child(3),  *:nth-child(5), *:nth-child(4), *:nth-child(7) {
+    background-color:  #eee8af; 
+    
+  } 
+
+.container *:nth-child(2), *:nth-child(6), *:nth-child(8), *:nth-child(9), *:nth-child(10) {
+    background-color:  #ff6347; 
+  }  
+
+.container .item { 
+    padding: 2vh; 
+    margin-bottom: 2%; 
+    text-align: center; 
+    display: flex;
+    /* height:  4vw;  */
+    justify-content: center;
+    align-items: center;  
+    
+
+}   
+
+
+
+/* Could be automated with sass, but not sure how to implement yet... */
+
+
+  
