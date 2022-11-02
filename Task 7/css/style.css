@@ -22,6 +22,10 @@
 
 /* Custom CSS */ 
 .spaghetti_background {
-    background-image: url(/Images/spaghetti_header.jpg);
+    background-image: url("/Task 7/images/spaghetti_header.jpg");
 
+} 
+
+.info_text {
+    color: #0042D1;
 }
